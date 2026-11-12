@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ÁUREA Studio, estudio de arquitectura e interiorismo en Madrid. Diseñamos espacios atemporales donde la luz, la materia y las personas conviven en equilibrio.">
+  <title>ÁUREA Studio | Arquitectura e Interiorismo</title>
+
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Script -->
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <header class="header" id="header">
+  <nav class="nav container" aria-label="Navegación principal">
+
+    <a href="#inicio" class="nav__logo">
+      ÁUREA <span class="nav__logo-sub">Studio</span>
+    </a>
+
+    <ul class="nav__menu" id="nav-menu">
+      <li><a href="#proyectos" class="nav__link">Proyectos</a></li>
+      <li><a href="#servicios" class="nav__link">Servicios</a></li>
+      <li><a href="#estudio" class="nav__link">Estudio</a></li>
+      <li><a href="#testimonios" class="nav__link">Testimonios</a></li>
+      <li><a href="#contacto" class="nav__link nav__link--cta">Contacto</a></li>
+    </ul>
+
+    <button
+      class="nav__toggle"
+      id="nav-toggle"
+      type="button"
+      aria-label="Abrir menú"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      <span class="nav__toggle-line"></span>
+      <span class="nav__toggle-line"></span>
+    </button>
+
+  </nav>
+</header>
+
+  <main>
+    <!-- Hero -->
+     <section class="hero" id="inicio">
+        <div class="hero__container container">
+
+            <div class="hero__content">
+                <p class="eyebrow">Arquitectura · Interiorismo · Madrid</p>
+
+                <h1 class="hero__title">
+                    Diseñamos espacios que <em>respiran</em> calma
+                </h1>
+
+                <p class="hero__text">
+                    Desde 2009 creamos viviendas, hoteles y espacios de trabajo donde la luz natural, los materiales nobles y la proporción conviven en equilibrio.
+                </p>
+
+                <div class="hero__actions">
+                    <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+                    <a href="#contacto" class="btn btn--ghost">Hablemos</a>
+                </div>
+            </div>
+
+            <div class="hero__media">
+                <img
+                    src="assets/img/hero.jpeg"
+                    alt="Salón luminoso de estilo minimalista con muebles de madera clara y grandes ventanales"
+                    class="hero__img"
+                    width="1200"
+                    height="1500"
+                >
+            </div>
+        </div>
+     </section>
+    <!-- Proyectos destacados -->
+    <section class="section projects" id="proyectos">
+    <div class="container">
+
+      <header class="section__header">
+        <p class="eyebrow">Proyectos destacados</p>
+        <h2 class="section__title">Arquitectura pensada para ser habitada</h2>
+        <p class="section__text">
+        Una selección de obras recientes en las que cada decisión, desde la
+        orientación hasta el último acabado, responde a la forma de vivir de
+        quienes las habitan.
+        </p>
+      </header>
+
+      <div class="projects__grid">
+
+        <article class="project-card project-card--featured">
+          <div class="project-card__media">
+            <img
+              src="assets/img/proyecto-1.jpg"
+              alt="Vivienda contemporánea de líneas horizontales al atardecer, con el interior iluminado"
+              class="project-card__img"
+              loading="lazy"
+            >
+        </div>
+        <div class="project-card__info">
+          <p class="project-card__category">Vivienda unifamiliar</p>
+          <h3 class="project-card__title">Casa Albar</h3>
+          <p class="project-card__meta">Pozuelo de Alarcón · 2024</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__media">
+          <img
+            src="assets/img/proyecto-2.jpg"
+            alt="Vestíbulo de hotel con iluminación cálida, mostrador de piedra y butacas de terciopelo"
+            class="project-card__img"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-card__info">
+          <p class="project-card__category">Hotelería</p>
+          <h3 class="project-card__title">Hotel Lumbre</h3>
+          <p class="project-card__meta">Sevilla · 2023</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__media">
+          <img
+            src="assets/img/proyecto-3.jpg"
+            alt="Salón de un ático con iluminación indirecta en el techo y sofá en tonos claros"
+            class="project-card__img"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-card__info">
+          <p class="project-card__category">Interiorismo residencial</p>
+          <h3 class="project-card__title">Ático Serrano</h3>
+          <p class="project-card__meta">Madrid · 2024</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__media">
+          <img
+            src="assets/img/proyecto-4.jpg"
+            alt="Despacho con mamparas de vidrio, mesa de trabajo y luz natural"
+            class="project-card__img"
+            loading="lazy"
+          >
+        </div>
+        <div class="project-card__info">
+          <p class="project-card__category">Espacio de trabajo</p>
+          <h3 class="project-card__title">Estudio Nido</h3>
+          <p class="project-card__meta">Valencia · 2022</p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+    <!-- Servicios -->
+    <section class="section services" id="servicios">
+      <div class="container">
+
+        <header class="section__header">
+          <p class="eyebrow">Servicios</p>
+          <h2 class="section__title">Del primer trazo a la última pieza</h2>
+          <p class="section__text">
+            Acompañamos cada proyecto de principio a fin con un único equipo, para que la idea inicial llegue intacta a la obra terminada.
+          </p>
+        </header>
+
+        <ul class="services__grid">
+
+          <li class="service-card">
+            <span class="service-card__number">01</span>
+            <svg class="service-card__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" strokelinecap="round" stroke-linejoin="round">
+              <path d="M3 10.5 12 3l9 7.5" />
+              <path d="M5 9.5V21h14V9.5" />
+              <path d="M10 21v-6h4v6" />
+            </svg>
+            <h3 class="service-card__title">Arquitectura residencial</h3>
+            <p class="service-card__text">
+              Viviendas unifamiliares y plurifamiliares, desde el estudio del solar y la orientación hasta la entrega de llaves.
+            </p>
+          </li>
+
+          <li class="service-card">
+            <span class="service-card__number">02</span>
+            <svg class="service-card__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 11V8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v3" />
+              <path d="M2 13a2 2 0 0 1 4 0v2h12v-2a2 2 0 0 1 4 0v5H2z" />
+              <path d="M5 18v2M19 18v2" />
+            </svg>
+            <h3 class="service-card__title">Interiorismo</h3>
+            <p class="service-card__text">
+              Interiores a medida: distribución, materiales, iluminación y mobiliario pensados como un todo coherente.
+            </p>
+          </li>
+
+          <li class="service-card">
+            <span class="service-card__number">03</span>
+            <svg class="service-card__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20 11a8 8 0 0 0-14.9-4" />
+              <path d="M4 3v4h4" />
+              <path d="M4 13a8 8 0 0 0 14.9 4" />
+              <path d="M20 21v-4h-4" />
+            </svg>
+            <h3 class="service-card__title">Rehabilitación</h3>
+            <p class="service-card__text">
+              Recuperamos edificios y viviendas existentes respetanto su carácter y mejorando su confort y eficiencia energética.
+            </p>
+          </li>
+
+          <li class="service-card">
+            <span class="service-card__number">04</span>
+            <svg class="service-card__icon" aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="4" width="14" height="17" rx="1" />
+              <path d="M9 4V3h6v1" />
+              <path d="M9 11h6M9 15h4" />
+            </svg>
+            <h3 class="service-card__title">Dirección de obra</h3>
+            <p class="service-card__text">
+              Coordinamos gremios y supervisamos cada fase de la construcción, con control riguroso de plazos y presupuesto.
+            </p>
+          </li>
+        </ul>
+        
+      </div>
+    </section>
+
+    <!-- Sobre el estudio -->
+    <section class="section about" id="estudio">
+      <div class="container about__container">
+
+        <div class="about__media">
+          <img
+            src="assets/img/estudio-1.jpg"
+            alt="Mesa de trabajo del estudio con planos, maquietas y luz natural"
+            class="about__img about__img--main"
+            loading="lazy"
+          >
+          <img
+            src="assets/img/estudio-2.jpg"
+            alt="Muestras de materiales, textiles sobre una mesa de trabajo"
+            class="about__img about__img--detail"
+            loading="lazy"
+            >
+        </div>
+
+        <div class="about__content">
+          <p class="eyebrow">Sobre el estudio</p>
+          <h2 class="section__title">Más de quince años diseñando con calma</h2>
+
+          <p class="about__text">
+            ÁUREA nació en Madrid en 2009 de la mano de los arquitectos Lucía márquez y Daniel Ferrer, con una idea sencilla: la buena arquitectura no se impone, se habita.
+          </p>
+          <p class="about__text">
+            Hoy somos un equipo de catorce personas (arquitectos, interioristas y aparejadores) que trabaja cada encargo como una pieza única, cuidando la luz, la proporción y la honestidad de los materiales.
+          </p>
+
+          <ul class="about__values">
+            <li class="about__value">
+              <h3 class="about__value-title">Luz natural</h3>
+              <p class="about__value-text">
+                Orientamos cada espacio para que la luz sea el primer material del proyecto.
+              </p>
+            </li>
+            <li class="about__value">
+              <h3 class="about__value-title">Materiales nobles</h3>
+              <p class="about__value-text">
+                Madera, piedra, cal y lino: materiales que envejecen con belleza.
+              </p>
+            </li>
+            <li class="about__value">
+              <h3 class="about__value-title">Diseño atemporal</h3>
+              <p class="about__value-text">
+                Huimos de las modas para crear espacios que sigan emocionando dentro de veinte años.
+              </p>
+            </li>
+          </ul>
+
+          <p class="about__signature">
+            Lucía Márquez &amp; Daniel Ferrer
+            <span class="about__signature-role">Socios fundadores</span>
+          </p>
+        </div>
+
+      </div>
+    </section>
+    <!-- Estadísticas -->
+    <section class="section stats" aria-label="El estudio en cifras">
+      <div class="container">
+        <dl class="stats__grid">
+
+          <div class="stat">
+            <dt class="stat__label">Años de trayectoria</dt>
+            <dd class="stat__value">
+              <span class="stat__number" data-target="15">15</span><span class="stat__suffix">+ </span>
+            </dd>
+          </div>
+
+          <div class="stat">
+            <dt class="stat__label">Proyectos entregados</dt>
+            <dd class="stat__value">
+              <span class="stat__number" data-target="120">120</span><span class="stat__suffix">+</span>
+            </dd>
+          </div>
+
+          <div class="stat">
+            <dt class="stat__label">Profesionales en el equipo</dt>
+            <dd class="stat__value">
+              <span class="stat__number" data-target="9">14</span>
+            </dd>
+          </div>
+
+          <div class="stat">
+            <dt class="stat__label">Premios de arquitectura y diseño</dt>
+            <dd class="stat__value">
+              <span class="stat__number" data data-target="9">9</span>
+            </dd>
+          </div>
+
+        </dl>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="section testimonials" id="testimonios">
+      <div class="container">
+
+        <header class="section__header">
+          <p class="eyebrow">Testimonios</p>
+          <h2 class="section__title">Lo que cuentan quienes ya habitan nuestros espacios</h2>
+        </header>
+
+        <div class="testimonials__slider">
+
+          <div class="testimonials__track" aria-live="polite">
+
+            <figure class="testimonial is-active">
+              <blockquote class="testimonial__quote">
+                <p>
+                  "Llegamos con un terreno y muchísimas dudas. Salimos con una casa que parece haber estado siempre ahí. Cada mañana la luz entra exactamente como nos prometieron."
+                </p>
+              </blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__name">Elena Ruiz y Marcos Gil</span>
+                <span class="testimonial__project">Casa Albar · Pozuelo de Alarcón</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial__quote">
+                <p>
+                  "ÁUREA entendió que un hotel no se diseña solo para la foto, sino para quien lo recorre. Nuestros huéspedes hablan del vestíbulo antes que de la habitación."
+                </p>
+              </blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__name">Javier Ortega, director</span>
+                <span class="testimonial__project">Hotel Lumbre · Sevilla</span>
+              </figcaption>
+            </figure>
+
+            <figure class="testimonial">
+              <blockquote class="testimonial__quote">
+                <p>
+                  "Cumplieron plazos y presupuesto, algo que no esperaba en una reforma integral. Pero lo que más valoro es que la casa sigue sintiéndose mía."
+                </p>
+              </blockquote>
+              <figcaption class="testimonial__author">
+                <span class="testimonial__name">Carmen Vidal</span>
+                <span class="testimonial__project">Ático Serrano · Madrid</span>
+              </figcaption>
+            </figure>
+
+          </div>
+
+          <div class="testimonials__controls">
+            <button class="testimonials__btn" id="testimonial-prev" type="button" aria-label="Testimonio anterior">
+              <svg aria-hidden="true" width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M11 6l-6 6 6 6" />
+              </svg>
+            </button>
+
+            <p class="testimonials__counter">
+              <span id="testimonial-current">01</span> / <span id="testimonial-total">03</span>
+            </p>
+
+            <div class="testimonials__btn" id="testimonial-next" type="button" aria-label="Testimonio sigueinte">
+              <svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    </section>
+    <!-- Contacto -->
+<section class="section contact" id="contacto">
+  <div class="container contact__container">
+
+    <div class="contact__info">
+      <p class="eyebrow">Contacto</p>
+      <h2 class="section__title">Hablemos de tu proyecto</h2>
+      <p class="contact__text">
+        Cuéntanos qué tienes en mente. Respondemos a todas las consultas
+        en un plazo máximo de 48 horas laborables.
+      </p>
+
+      <address class="contact__details">
+        <div class="contact__item">
+          <span class="contact__label">Estudio</span>
+          <span class="contact__value">Paseo de la Ribera 18, 28010 Madrid</span>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">Email</span>
+          <a href="mailto:hola@aureastudio.es" class="contact__value contact__link">hola@aureastudio.es</a>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">Teléfono</span>
+          <a href="tel:+34910000000" class="contact__value contact__link">+34 910 000 000</a>
+        </div>
+        <div class="contact__item">
+          <span class="contact__label">Horario</span>
+          <span class="contact__value">Lunes a viernes, de 9:00 a 18:00</span>
+        </div>
+      </address>
+    </div>
+
+    <form class="form" id="contact-form" novalidate>
+
+      <div class="form__group">
+        <label for="name" class="form__label">Nombre completo</label>
+        <input type="text" id="name" name="name" class="form__input" autocomplete="name" required aria-describedby="name-error">
+        <p class="form__error" id="name-error"></p>
+      </div>
+
+      <div class="form__row">
+        <div class="form__group">
+          <label for="email" class="form__label">Email</label>
+          <input type="email" id="email" name="email" class="form__input" autocomplete="email" required aria-describedby="email-error">
+          <p class="form__error" id="email-error"></p>
+        </div>
+
+        <div class="form__group">
+          <label for="phone" class="form__label">Teléfono <span class="form__optional">(opcional)</span></label>
+          <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel" aria-describedby="phone-error">
+          <p class="form__error" id="phone-error"></p>
+        </div>
+      </div>
+
+      <div class="form__group">
+        <label for="project-type" class="form__label">Tipo de proyecto</label>
+        <select id="project-type" name="project-type" class="form__input form__select" required aria-describedby="project-type-error">
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="vivienda">Vivienda nueva</option>
+          <option value="interiorismo">Interiorismo</option>
+          <option value="rehabilitacion">Rehabilitación</option>
+          <option value="comercial">Hotelería o espacio comercial</option>
+          <option value="otro">Otro</option>
+        </select>
+        <p class="form__error" id="project-type-error"></p>
+      </div>
+
+      <div class="form__group">
+        <label for="message" class="form__label">Cuéntanos tu proyecto</label>
+        <textarea id="message" name="message" class="form__input form__textarea" rows="5" required aria-describedby="message-error"></textarea>
+        <p class="form__error" id="message-error"></p>
+      </div>
+
+      <div class="form__group form__group--checkbox">
+        <input type="checkbox" id="privacy" name="privacy" class="form__checkbox" required aria-describedby="privacy-error">
+        <label for="privacy" class="form__checkbox-label">
+          He leído y acepto la política de privacidad.
+        </label>
+        <p class="form__error" id="privacy-error"></p>
+      </div>
+
+      <button type="submit" class="btn btn--primary form__submit">Enviar mensaje</button>
+
+      <p class="form__success" id="form-success" role="status"></p>
+
+    </form>
+
+  </div>
+</section>
+  </main>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer__container">
+
+    <div class="footer__brand">
+      <a href="#inicio" class="footer__logo">
+        ÁUREA <span class="footer__logo-sub">Studio</span>
+      </a>
+      <p class="footer__tagline">
+        Arquitectura e interiorismo con alma. Madrid, desde 2009.
+      </p>
+    </div>
+
+    <nav class="footer__col" aria-label="Navegación del pie de página">
+      <h2 class="footer__title">Navegación</h2>
+      <ul class="footer__list">
+        <li><a href="#proyectos" class="footer__link">Proyectos</a></li>
+        <li><a href="#servicios" class="footer__link">Servicios</a></li>
+        <li><a href="#estudio" class="footer__link">Estudio</a></li>
+        <li><a href="#testimonios" class="footer__link">Testimonios</a></li>
+        <li><a href="#contacto" class="footer__link">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <div class="footer__col">
+      <h2 class="footer__title">Contacto</h2>
+      <ul class="footer__list">
+        <li><a href="mailto:hola@aureastudio.es" class="footer__link">hola@aureastudio.es</a></li>
+        <li><a href="tel:+34910000000" class="footer__link">+34 910 000 000</a></li>
+        <li>Paseo de la Ribera 18, Madrid</li>
+      </ul>
+    </div>
+
+    <div class="footer__col">
+      <h2 class="footer__title">Síguenos</h2>
+      <ul class="footer__list">
+        <li><a href="https://www.instagram.com/" class="footer__link" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+        <li><a href="https://www.pinterest.com/" class="footer__link" target="_blank" rel="noopener noreferrer">Pinterest</a></li>
+        <li><a href="https://www.linkedin.com/" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© <span id="current-year">2026</span> ÁUREA Studio. Todos los derechos reservados.</p>
+    <p>Proyecto demostrativo · Fotografías de Unsplash y Pexels</p>
+  </div>
+</footer>
+
+</body>
+</html>
